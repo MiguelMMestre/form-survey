@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-100deg, #ccffff, #ffcccc);
+}
+
+#title {
+    text-align: center;
+    color: blueviolet;
+}
+
+#description {
+    text-align: center;
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#survey-form {
+    width: 75%;
+    margin: 0 auto;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>freeCodeCamp Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <meta charset="UTF-8">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form Project</h1>
+        <p id="description">Form to enhance skills learned from freeCodeCamp</p>
+        <form id="survey-form" action="" method="GET">
+            <label for="name-label">Name:</label>
+            <input type="text" id="name-label" name="name" placeholder="Name" required/>
+            <br/>
+            <label for="email-label">E-mail:</label>
+            <input type="email" id="email-label" name="email" placeholder="youremail@gmail.com" required/>
+            <br/>
+            <label for="number-label">Age:</label>
+            <input type="number" id="number-label" name="age" placeholder="18" min="5" max="150" step="1"/>
+            <br/>
+            <label for="dropdown">Current Job:</label>
+            <select id="dropdown" name="current-job">
+                <option value="unemployed">Unemployed</option>
+                <option value="student">Student</option>
+                <option selected value="employed">Employed</option>
+            </select>
+            <br/>
+            <label for="male">Gender:</label>
+            <input type="radio" name="gender" id="male" value="male"/>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female"/>
+            <label for="female">Female</label>
+            <br/>
+            <label for="mention">Would you recommend freeCodeCamp?</label>
+            <br/>
+            <input type="radio" name="mention" value="yes" checked/>
+            <label for="mention">Yes</label>
+            <br/>
+            <input type="radio" name="mention" value="no"/>
+            <label for="mention">No</label>
+            <br/>
+            <input type="radio" name="mention" value="maybe">
+            <label for="mention">Maybe</label>
+            <br/>
+            <label for="user-platfrom-choice">Wich are the best learning platforms?</label>
+            <br/>
+            <label for="fcc">FreeCodeCamp</label>
+            <input type="checkbox" name="user-platfrom-choice" id="fcc" value="freecodecamp"/>
+            <label for="bento">Bento</label>
+            <input type="checkbox" name="user-platfrom-choice" value="bento"/>
+            <label for="udemy">Udemy</label>
+            <input type="checkbox" name="user-platfrom-choice" value="udemy"/>
+            <br/>
+            <label for="list">Another?</label>
+            <input type="text" name="user-platfrom-choice" id="list" list="choices" value=""/>
+                <datalist id="choices">
+                    <option>Codecademy</option>
+                    <option>Udacity</option>
+                    <option>MDN</option>
+                </datalist>
+            <br/>
+            <br/>
+            <label for="suggestions">Any Suggestions?</label>
+            <br/>
+            <textarea id="Suggestions?" cols="20" rows="5" placeholder="Write your suggestions to us!"></textarea>
+            <br/>
+            <input type="submit" value="Submit" id="submit"/>
+        </form>
+    </body>
+    <footer>
+
+    </footer>
+</html>
